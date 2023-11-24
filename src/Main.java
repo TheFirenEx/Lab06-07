@@ -11,10 +11,11 @@ public class Main {
         System.out.println("Podaj maksymalną wartość");
         int maks = skaner.nextInt();
 
-        int tab[] = new int[rozmiar];
+        int[] tab = new int[rozmiar];
         tab = liczbylos(maks, rozmiar);
+        //zad1
         pokaz(tab);
-
+        //zad2
         pokaz2(tab);
 
     }
@@ -23,7 +24,7 @@ public class Main {
     public static int[] liczbylos(int K, int k) {
 
         Random losowo = new Random();
-        int tab[] = new int[k];
+        int[] tab = new int[k];
         for (int i = 0; i < k; i++) {
             tab[i] = losowo.nextInt(1, K + 1);
         }
@@ -35,7 +36,10 @@ public class Main {
 
         System.out.print("[");
         for (int i = 0; i < tab.length; i++) {
-            System.out.print(tab[i] + ", ");
+            if(i != tab.length-1){
+                System.out.print(tab[i] + ", ");
+            }
+            else System.out.print(tab[i]);
         }
         System.out.println("]");
     }
@@ -45,7 +49,10 @@ public class Main {
 
         System.out.print("[");
         for (int i = tab.length-1; i >= 0; i--) {
-            System.out.print(tab[i] + ", ");
+            if(i != 0){
+                System.out.print(tab[i] + ", ");
+            }
+            else System.out.print(tab[i]);
         }
         System.out.print("]");
     }
