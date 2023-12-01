@@ -18,7 +18,7 @@ public class Main {
         pokaz(tab);
         //zad2
         pokaz2(tab);
-        //zad9
+        //zad11
         trzycyfroweprzez7(tab);
 
     }
@@ -58,7 +58,7 @@ public class Main {
         System.out.print("]");
     }
 
-    //ZAD 9
+    //ZAD 11
     public static int trzycyfroweprzez7(int[] tab) {
 
         int licznik = 0;
