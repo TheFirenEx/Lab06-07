@@ -7,7 +7,7 @@ public class GeneratorTablicNiepowtarzający {
 
         Scanner skaner = new Scanner(System.in);
 
-        System.out.println("Podaj ilość generowanych pozycji w tablicy");
+        System.out.println("Podaj dlugosc tablicy");
         int rozmiar = skaner.nextInt();
         System.out.println("Podaj maksymalną wartość");
         int maks = skaner.nextInt();
@@ -15,16 +15,14 @@ public class GeneratorTablicNiepowtarzający {
         int[] tab = new int[rozmiar];
         tab = tabGen1(rozmiar, maks);
         pokaz(tab);
+//ZAD 11
+        int[] tabP = new int[0];
+        tabP = parzyste_nieparzyste(tab);
+        pokaz(tabP);
 
-//ZAD13
-        int[] tabP = new int[200];
-        tabP = podzial_parzyste(tab);
-        pokaz13(tabP);
-
-        int[] tabNP = new int[200];
-        tabNP = podzial_nieparzyste(tab);
-        pokaz13(tabNP);
-
+        int[] tabNP = new int[0];
+        tabNP = parzyste_nieparzyste(tab);
+        pokaz(tabNP);
 
     }
 
@@ -75,61 +73,30 @@ public class GeneratorTablicNiepowtarzający {
         System.out.println("]");
     }
 
-    //ZAD 13
-    public static int[] podzial_parzyste(int[] tab) {
 
-        int[] tabP;
+    public static int[] parzyste_nieparzyste(int[] tab) {
+
         int licznikP = 0;
+        int licznikNP = 0;
         for (int i = 0; i < tab.length; i++) {
             if (tab[i] % 2 == 0) licznikP++;
+            else licznikNP++;
         }
-
-        tabP = new int[licznikP];
+        int[] tabP = new int[licznikP];
+        int[] tabNP = new int[licznikNP];
         int indexP = 0;
+        int indexNP = 0;
         for (int i = 0; i < tab.length; i++) {
-
             if (tab[i] % 2 == 0) {
                 tabP[indexP] = tab[i];
                 indexP++;
-
-            }
-
-        }
-
-        return tabP;
-    }
-
-    public static int[] podzial_nieparzyste(int[] tab) {
-
-        int[] tabNP;
-        int licznikNP = 0;
-        for (int i = 0; i < tab.length; i++) {
-            if (tab[i] % 2 != 0) licznikNP++;
-        }
-
-
-        tabNP = new int[licznikNP];
-        int indexNP = 0;
-        for (int i = 0; i < tab.length; i++) {
-            if (tab[i] % 2 != 0) {
+            } else {
                 tabNP[indexNP] = tab[i];
                 indexNP++;
             }
-
         }
-        return tabNP;
+        pokaz(tabP);
+        pokaz(tabNP);
+        return tabP;
     }
-
-    public static void pokaz13(int[] T) {
-
-        System.out.print("[");
-        for (int i = 0; i < T.length; i++) {
-            if (i != T.length - 1) {
-                System.out.print(T[i] + ", ");
-            } else System.out.print(T[i]);
-        }
-        System.out.println("]");
-    }
-
-
 }
