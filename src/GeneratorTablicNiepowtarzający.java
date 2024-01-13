@@ -91,9 +91,7 @@ public class GeneratorTablicNiepowtarzający {
             if (tab[i] % 2 == 0) {
                 tabP[indexP] = tab[i];
                 indexP++;
-
             }
-
         }
 
         return tabP;
