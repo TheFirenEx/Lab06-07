@@ -18,8 +18,8 @@ public class Main {
         pokaz(tab);
         //zad2
         pokaz2(tab);
-        //zad11
-        trzycyfroweprzez7(tab);
+        //zad9
+//        System.out.println(trzycyfroweprzez7());
 
     }
 
@@ -58,17 +58,17 @@ public class Main {
         System.out.print("]");
     }
 
-    //ZAD 11
-    public static int trzycyfroweprzez7(int[] tab) {
-
-        int licznik = 0;
-        for (int i = 0; i < tab.length; i++) {
-            if (tab[i] > 99 && tab[i] < 1000 && tab[i] % 7 == 0) {
-                licznik++;
-            }
-        }
-        return licznik;
-    }
+//    //ZAD 9
+//    public static void trzycyfroweprzez7(int[] tab) {
+//
+//        int licznik = 0;
+//        for (int i = 0; i < tab.length; i++) {
+//            if (tab[i] > 99 && tab[i] < 1000 && tab[i] % 7 == 0) {
+//                licznik++;
+//            }
+//        }
+//        return licznik;
+//    }
 
     //ZAD 6
 }

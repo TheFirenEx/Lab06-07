@@ -19,14 +19,11 @@ przez 3 i przez 7.
 13. Podzielić ciąg/zbiór na dwa uporządkowane podciągi/podzbiory: liczb parzystych i liczb
 nieparzystych.
 Uwaga: w zbiorze elementy nie mogą się powtarzać.
-
-T2.
-Utworzyć dwie macierze („źródłowe”) liczb rzeczywistych o zadanych rozmiarach M x M (M – dane)
+T2. Utworzyć dwie macierze („źródłowe”) liczb rzeczywistych o zadanych rozmiarach M x M (M – dane)
 a następnie wyznaczyć:
 1. sumę macierzy,
 2. iloczyn macierzy,
 3. macierze transponowane dla każdej z macierzy źródłowej.
-
 T3. Dla danego zbioru P zawierającego n punktów na płaszczyźnie, w układzie współrzędnych XOY,
 wyznacz:
 1. punkt najbardziej odległy od początku układu współrzędnych,
@@ -39,9 +36,7 @@ Ponadto:
 6. uporządkuj zbiór punktów w kolejności rosnących odległości tych punktów od początku
 układu współrzędnych,
 7. uporządkuj pary punktów w kolejności rosnących odległości pomiędzy nimi.
-
-T4.
-Dla wielomianu o postaci:
+T4. Dla wielomianu o postaci:
 w(x) = a 0 * x n + a 1 * x n-1 + a 2 * x n-2 + ... + a n-1 * x + a n
 zaprogramuj następujące funkcjonalności (F) wielofunkcyjnego programu:
 1. Wczytanie parametrów wielomianu w(x) (stopnia wielomianu n oraz współczynników
@@ -61,10 +56,8 @@ pochodnej (wykonalne, jeśli wcześniej zrealizowano 1 i 2).
 zrealizowano 7 i nie wykonano potem 1 … 6).
 Zweryfikuj poprawność uwarunkowań dla poszczególnych funkcji programu. W razie potrzeby
 dokonaj stosownej korekty (zmiany, uzupełnienia) zbioru uwarunkowań.
-
 Zadanie dla hobbystów:
-T5. 
-Zaproponuj funkcjonalność programu do obsługi zawodów pucharu świata w skokach narciarskich.
+T5. Zaproponuj funkcjonalność programu do obsługi zawodów pucharu świata w skokach narciarskich.
 Zapewnić:
 - możliwość zapisywania zawodników (wprowadzić stosowne górne ograniczenie max>50),
 - możliwość przeprowadzenia serii eliminacyjnej – punktacja sędziów: P punktów oraz za każdy
