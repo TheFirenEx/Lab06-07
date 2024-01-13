@@ -19,11 +19,11 @@ public class GeneratorTablicNiepowtarzający {
 //ZAD13
         int[] tabP = new int[200];
         tabP = podzial_parzyste(tab);
-        pokaz13(tabP);
+        pokaz(tabP);
 
         int[] tabNP = new int[200];
         tabNP = podzial_nieparzyste(tab);
-        pokaz13(tabNP);
+        pokaz(tabNP);
 
 
     }
@@ -120,16 +120,16 @@ public class GeneratorTablicNiepowtarzający {
         return tabNP;
     }
 
-    public static void pokaz13(int[] T) {
-
-        System.out.print("[");
-        for (int i = 0; i < T.length; i++) {
-            if (i != T.length - 1) {
-                System.out.print(T[i] + ", ");
-            } else System.out.print(T[i]);
-        }
-        System.out.println("]");
-    }
+//    public static void pokaz13(int[] T) {
+//
+//        System.out.print("[");
+//        for (int i = 0; i < T.length; i++) {
+//            if (i != T.length - 1) {
+//                System.out.print(T[i] + ", ");
+//            } else System.out.print(T[i]);
+//        }
+//        System.out.println("]");
+//    }
 
 
 }
