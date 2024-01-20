@@ -9,24 +9,34 @@ public class Macierze {
         int N = 5;
 
 
+        System.out.println("Wygenerowana macierz losowa");
         int[][] MacGen = new int[M][N];
         MacGen = MacierzGen(M, N, K);
         pokaz(MacGen);
         System.out.println();
 //SUMA A i B
+        System.out.println("A");
         int[][] A = new int[M][N];
         A = MacierzGen(M, N, K);
         pokaz(A);
         System.out.println();
 
+        System.out.println("B");
         int[][] B = new int[M][N];
         B = MacierzGen(M, N, K);
         pokaz(B);
         System.out.println();
 
+        System.out.println("C=A+B");
         int[][] C = new int[M][N];
         C = sumowanieM(A, B);
         pokaz(C);
+        System.out.println();
+
+        System.out.println("Macierz transponowana");
+        int[][] matrixT = new int[M][N];
+        matrixT = macierztransponowana(MacGen);
+        pokaz(matrixT);
         System.out.println();
 
     }
@@ -78,5 +88,16 @@ public class Macierze {
         }
         return suma;
 
+    }
+
+    //T2.3
+    public static int [][] macierztransponowana(int[][] MacGen){
+        int[][] matrixT = new int[MacGen[0].length][MacGen.length];
+        for (int i = 0; i < matrixT.length; i++) {
+            for (int j = 0; j < matrixT[0].length; j++) {
+                matrixT[i][j] = MacGen[j][i];
+            }
+        }
+        return matrixT;
     }
 }

@@ -12,16 +12,16 @@ public class GeneratorTablicNiepowtarzający {
         System.out.println("Podaj maksymalną wartość");
         int maks = skaner.nextInt();
 
-        int[] tab = new int[rozmiar];
+        int[] tab;
         tab = tabGen1(rozmiar, maks);
         pokaz(tab);
 
 //ZAD13
-        int[] tabP = new int[200];
+        int[] tabP;
         tabP = podzial_parzyste(tab);
         pokaz(tabP);
 
-        int[] tabNP = new int[200];
+        int[] tabNP;
         tabNP = podzial_nieparzyste(tab);
         pokaz(tabNP);
 

@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Podaj maksymalną wartość");
         int maks = skaner.nextInt();
 
-        int[] tab = new int[rozmiar];
+        int[] tab;
         tab = liczbylos(maks, rozmiar);
         //zad1
         pokaz(tab);
